@@ -4,11 +4,23 @@ title: Building Arwaeave
 
 # Building Arweave
 
-## 1. Clone the Repo
+## 1. Set up the Repo
+
+### 1.1 Clone
+
+Clone the public repository
 
 ```sh
 git clone --recursive https://github.com/ArweaveTeam/arweave.git
 cd arweave
+```
+
+### 1.2 Configure
+
+Set up git to ignore extensive reformatting commits when using `git blame`
+
+```sh
+git config blame.ignoreRevsFile .git-blame-ignore-revs
 ```
 
 ## 2. Install Dependencies
